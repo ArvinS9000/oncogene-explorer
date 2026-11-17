@@ -1,6 +1,14 @@
 # OncoGene Explorer
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://arvins9000-oncogene-explorer-dashboardapp-lghiwm.streamlit.app/)
+![Python 3.11](https://img.shields.io/badge/python-3.11-blue)
+![Tests](https://img.shields.io/badge/tests-53%20passing-brightgreen)
+![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey)
+
 **Leakage-safe analysis of breast tumor vs. paired adjacent-normal gene expression, with an interactive dashboard.**
+
+**▶ Live demo: [arvins9000-oncogene-explorer-dashboardapp-lghiwm.streamlit.app](https://arvins9000-oncogene-explorer-dashboardapp-lghiwm.streamlit.app/)**
+*(Free hosting sleeps after inactivity; if you see a wake-up screen, click the button and allow ~30 s.)*
 
 OncoGene Explorer is an end-to-end, reproducible computational-biology project built on public microarray
 data (NCBI GEO [GSE109169](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE109169)). It downloads and
@@ -160,7 +168,9 @@ streamlit run dashboard/app.py
 | **Biological pathways** | enrichment bar and dot plots, filters, gene–pathway associations, links to Reactome/GO |
 | **Findings & limitations** | results summary, candidate associations, limitations, confounding, future work |
 
-**Deploying to Streamlit Community Cloud:** the repo includes everything the dashboard needs (processed
+**Live deployment:** https://arvins9000-oncogene-explorer-dashboardapp-lghiwm.streamlit.app/
+
+**Deploying your own copy to Streamlit Community Cloud:** the repo includes everything the dashboard needs (processed
 matrix and derived artifacts). Create an app with repository `ArvinS9000/oncogene-explorer`, branch `main`,
 main file `dashboard/app.py`, and Python **3.11** (Advanced settings). Cloud installs the pinned, runtime-only
 `dashboard/requirements.txt`; the root `requirements.txt` is for the full pipeline.
