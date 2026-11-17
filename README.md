@@ -160,6 +160,11 @@ streamlit run dashboard/app.py
 | **Biological pathways** | enrichment bar and dot plots, filters, gene–pathway associations, links to Reactome/GO |
 | **Findings & limitations** | results summary, candidate associations, limitations, confounding, future work |
 
+**Deploying to Streamlit Community Cloud:** the repo includes everything the dashboard needs (processed
+matrix and derived artifacts). Create an app with repository `ArvinS9000/oncogene-explorer`, branch `main`,
+main file `dashboard/app.py`, and Python **3.11** (Advanced settings). Cloud installs the pinned, runtime-only
+`dashboard/requirements.txt`; the root `requirements.txt` is for the full pipeline.
+
 The dashboard only **reads** CSV/JSON/Parquet artifacts. It never retrains models or loads pickled files, so
 it opens instantly and is safe to deploy. Missing artifacts produce an explanatory warning, not a crash.
 
