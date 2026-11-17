@@ -40,7 +40,7 @@ with guarded("the dataset explorer"):
         mv = m.reset_index()
         if q:
             mv = mv[mv.astype(str).apply(lambda r: r.str.contains(q, case=False, regex=False)).any(axis=1)]
-        st.dataframe(mv, use_container_width=True, hide_index=True,
+        st.dataframe(mv, width="stretch", hide_index=True,
                      column_config={"age_years": st.column_config.NumberColumn("age", format="%d")})
         st.caption(f"{len(mv)} of {len(meta)} samples")
         download_csv(mv.set_index("sample_id"), "samples_filtered.csv")
@@ -60,7 +60,7 @@ with guarded("the dataset explorer"):
         if len(probes):
             sub = X.loc[m.index, probes]
             sub.columns = [f"{ann.loc[p, 'gene_symbol'] or '—'} ({p})" for p in probes]
-            st.dataframe(sub.round(3), use_container_width=True, height=420)
+            st.dataframe(sub.round(3), width="stretch", height=420)
             st.caption(f"{sub.shape[0]} samples × {sub.shape[1]} probes · log2 RMA")
             download_csv(sub, "expression_filtered.csv")
 
@@ -71,9 +71,9 @@ with guarded("the dataset explorer"):
         c[1].metric("Value range (log2)", f"{rep['final_summary']['min']:.1f} – {rep['final_summary']['max']:.1f}")
         c[2].metric("Probes removed (label-free)", sum(f["removed"] for f in rep["filters"]))
         c[3].metric("Near-constant probes kept", rep["near_constant_retained"]["count"])
-        st.plotly_chart(fig_expression_histogram(X.loc[m.index], m), use_container_width=True)
+        st.plotly_chart(fig_expression_histogram(X.loc[m.index], m), width="stretch")
         summ = data.metric_csv("per_sample_summary.csv", index_col=0)
-        st.plotly_chart(fig_sample_boxplots(summ.loc[m.index]), use_container_width=True)
+        st.plotly_chart(fig_sample_boxplots(summ.loc[m.index]), width="stretch")
         note("Per-sample distributions are tightly aligned, as expected after RMA quantile normalization. "
              "No sample shows a shifted or compressed scale.")
 
@@ -84,27 +84,27 @@ with guarded("the dataset explorer"):
         pcx = c1.selectbox("X axis", [f"PC{i}" for i in range(1, 6)], index=0)
         pcy = c2.selectbox("Y axis", [f"PC{i}" for i in range(1, 6)], index=1)
         pairs = c3.toggle("Connect each patient's tumor–normal pair", value=True)
-        st.plotly_chart(fig_pca(pca.loc[m.index], evr, pairs, pcx, pcy), use_container_width=True)
+        st.plotly_chart(fig_pca(pca.loc[m.index], evr, pairs, pcx, pcy), width="stretch")
         note("<b>Exploratory only.</b> This PCA uses all 50 samples (top 2,000 most variable probes) to "
              "visualize structure. It is never used as model input; classifiers refit every transform inside "
              "each training fold.")
         corr = data.metric_csv("sample_correlation.csv", index_col=0)
         order = [s for s in data.metric_json("sample_cluster_order.json") if s in m.index]
-        st.plotly_chart(fig_correlation_heatmap(corr, order, meta), use_container_width=True)
+        st.plotly_chart(fig_correlation_heatmap(corr, order, meta), width="stretch")
         st.markdown("**Outlier screen** — robust z-score of each sample's mean correlation with its own tissue group")
         out = data.metric_csv("outlier_screen.csv", index_col=0).loc[lambda d: d.index.isin(m.index)]
-        st.dataframe(out.sort_values("robust_z").round(3), use_container_width=True, height=260)
+        st.dataframe(out.sort_values("robust_z").round(3), width="stretch", height=260)
         note("Flags are informational; <b>no sample is removed</b>. Flagged samples are mostly tumors, which "
              "are biologically heterogeneous (subtype, tumor purity), plus normals with unusual composition.", warn=True)
         pdist = data.metric_csv("pair_distances.csv")
         st.markdown("**Tumor–normal distance per patient** (1 − Pearson r on top-variable probes)")
-        st.dataframe(pdist.round(3), use_container_width=True, hide_index=True, height=260)
+        st.dataframe(pdist.round(3), width="stretch", hide_index=True, height=260)
 
     with tab_val:
         val = pd.DataFrame(data.report_json("validation_report.json"))
         icon = {"pass": "✅", "warn": "⚠️", "fail": "❌"}
         val.insert(0, "", val["status"].map(icon))
-        st.dataframe(val[["", "name", "status", "detail"]], use_container_width=True, hide_index=True)
+        st.dataframe(val[["", "name", "status", "detail"]], width="stretch", hide_index=True)
         st.markdown("**Label-free filtering decisions**")
         st.json(rep["filters"], expanded=False)
         st.markdown("**Annotation**")
@@ -112,6 +112,6 @@ with guarded("the dataset explorer"):
         try:
             prov = json.loads((data.ROOT / "data" / "raw" / "provenance.json").read_text())
             st.markdown("**Download provenance** (source URLs and SHA-256 checksums)")
-            st.dataframe(pd.DataFrame(prov).T[["url", "sha256", "bytes", "retrieved_utc"]], use_container_width=True)
+            st.dataframe(pd.DataFrame(prov).T[["url", "sha256", "bytes", "retrieved_utc"]], width="stretch")
         except FileNotFoundError:
             st.caption("Provenance file not present (raw data not downloaded on this machine).")

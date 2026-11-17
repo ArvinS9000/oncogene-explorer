@@ -34,16 +34,16 @@ with guarded("pathway results"):
 
     t1, t2, t3 = st.tabs(["Bar chart", "Dot plot", "Table & genes"])
     with t1:
-        st.plotly_chart(fig_pathway_bar(d, n), use_container_width=True)
+        st.plotly_chart(fig_pathway_bar(d, n), width="stretch")
     with t2:
-        st.plotly_chart(fig_pathway_dot(d, n), use_container_width=True)
+        st.plotly_chart(fig_pathway_dot(d, n), width="stretch")
     with t3:
         q = st.text_input("Search terms or genes", placeholder="e.g. cell cycle, PPARG")
         show = d if not q else d[d["term_name"].str.contains(q, case=False, regex=False) |
                                  d["genes"].str.contains(q.upper(), regex=False)]
         st.dataframe(show[["library", "direction", "term_name", "term_id", "overlap", "set_size_in_universe",
                            "expected", "fold_enrichment", "p_value", "p_adj", "genes", "term_url"]],
-                     use_container_width=True, hide_index=True, height=420,
+                     width="stretch", hide_index=True, height=420,
                      column_config={"p_value": st.column_config.NumberColumn(format="%.2e"),
                                     "p_adj": st.column_config.NumberColumn("FDR", format="%.2e"),
                                     "expected": st.column_config.NumberColumn(format="%.1f"),

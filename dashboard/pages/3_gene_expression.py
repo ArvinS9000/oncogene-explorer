@@ -38,10 +38,10 @@ with guarded("the gene explorer"):
             c[2].metric("FDR (paired t)", fmt_p(r["p_adj"]))
             c[3].metric("FDR (Wilcoxon)", fmt_p(r.get("wilcoxon_p_adj", np.nan)))
             c[4].metric("Pairs higher in tumor", f"{r['frac_pairs_up']:.0%}")
-        st.plotly_chart(fig_gene_paired(X, meta, probe, sym), use_container_width=True)
+        st.plotly_chart(fig_gene_paired(X, meta, probe, sym), width="stretch")
         with st.expander("Gene-level summary statistics"):
             s = X[probe].groupby(meta["tissue_type"]).describe().T.round(3)
-            st.dataframe(s, use_container_width=True)
+            st.dataframe(s, width="stretch")
             other = ann.index[(ann["gene_symbol"] == sym) & (ann.index != probe)] if sym else []
             if len(other):
                 st.caption(f"Other probes mapped to {sym}: {', '.join(other)}")
@@ -50,7 +50,7 @@ with guarded("the gene explorer"):
         c1, c2 = st.columns(2)
         fdr = c1.select_slider("FDR threshold", [0.001, 0.01, 0.05, 0.1], value=0.05)
         lfc = c2.slider("|log2 fold change| threshold", 0.0, 3.0, 1.0, 0.25)
-        st.plotly_chart(fig_volcano(de, fdr, lfc), use_container_width=True)
+        st.plotly_chart(fig_volcano(de, fdr, lfc), width="stretch")
         n_up = ((de.p_adj < fdr) & (de.log2_fold_change >= lfc)).sum()
         n_dn = ((de.p_adj < fdr) & (de.log2_fold_change <= -lfc)).sum()
         st.caption(f"{n_up} probes up and {n_dn} down in tumor at FDR < {fdr} and |log2FC| ≥ {lfc}.")
@@ -73,7 +73,7 @@ with guarded("the gene explorer"):
             t = t[mask]
         cols = ["gene_symbol", "gene_description", "log2_fold_change", "direction", "cohens_dz", "p_value",
                 "p_adj", "wilcoxon_p_adj", "significant", "mean_tumor", "mean_normal", "frac_pairs_up"]
-        st.dataframe(t[cols], use_container_width=True, height=480,
+        st.dataframe(t[cols], width="stretch", height=480,
                      column_config={"p_value": st.column_config.NumberColumn(format="%.2e"),
                                     "p_adj": st.column_config.NumberColumn("FDR", format="%.2e"),
                                     "wilcoxon_p_adj": st.column_config.NumberColumn("Wilcoxon FDR", format="%.2e"),
@@ -103,7 +103,7 @@ with guarded("the gene explorer"):
             st.info("Select at least two genes.")
         else:
             labels = [ann.loc[p, "gene_symbol"] if isinstance(ann.loc[p, "gene_symbol"], str) else p for p in probes]
-            st.plotly_chart(fig_expression_heatmap(X, meta, list(probes), labels), use_container_width=True)
+            st.plotly_chart(fig_expression_heatmap(X, meta, list(probes), labels), width="stretch")
             note("Rows are z-scored per gene; rows and columns are hierarchically clustered (average linkage, "
                  "correlation distance). <b>Descriptive only:</b> 'Top DE' genes were chosen using all samples' "
                  "labels, so clean separation here is expected and is <i>not</i> evidence of predictive generalization.",

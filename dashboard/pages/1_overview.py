@@ -42,7 +42,7 @@ with left:
         "- **Comparison:** tumor vs. *adjacent* normal from the same patient — **not** healthy-donor tissue")
 with right:
     with guarded("the class distribution"):
-        st.plotly_chart(fig_class_distribution(data.samples()), use_container_width=True)
+        st.plotly_chart(fig_class_distribution(data.samples()), width="stretch")
 
 st.divider()
 st.subheader("Major findings at a glance")
@@ -82,7 +82,7 @@ with guarded("the composition scatter"):
                                                "<br>proliferation %{y:.2f}<extra></extra>"))
     fig.update_layout(xaxis_title="Adipocyte marker score (mean z: ADIPOQ, PLIN1, LEP, FABP4, …)",
                       yaxis_title="Proliferation marker score (mean z: MKI67, TOP2A, CCNB1, …)")
-    st.plotly_chart(_style(fig, None, 420), use_container_width=True)
+    st.plotly_chart(_style(fig, None, 420), width="stretch")
     note("Marker panels are fixed literature lists, not chosen from these labels. Adjacent-normal breast is "
          "fat-rich, and tumors are cell-dense and proliferative, so two simple composition scores already "
          "separate most samples. Any classifier trained on this contrast will exploit that.")

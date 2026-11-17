@@ -38,7 +38,7 @@ with guarded("model results"):
         row["Exact 95% CI"] = f"{ex['ci95'][0]:.2f}–{ex['ci95'][1]:.2f}"
         rows.append(row)
     table = pd.DataFrame(rows).set_index("Model")
-    st.dataframe(table, use_container_width=True)
+    st.dataframe(table, width="stretch")
     download_csv(fm[fm["model"].isin(chosen)].set_index("model"), "fold_metrics.csv", "Download fold-level metrics")
     note(f"Values are mean ± SD across {summ['cv']['outer_folds']} outer folds × {summ['cv']['outer_repeats']} "
          "repeats (each fold holds out 5 patients = 10 samples). The last two columns treat each <b>patient</b> as "
@@ -50,12 +50,12 @@ with guarded("model results"):
                                   "Learning curve", "Hyperparameters & runtime"])
     with t1:
         metric = st.selectbox("Metric", METRICS, format_func=lambda s: s.replace("_", " "))
-        st.plotly_chart(fig_metric_distribution(fm[fm["model"].isin(chosen)], metric), use_container_width=True)
+        st.plotly_chart(fig_metric_distribution(fm[fm["model"].isin(chosen)], metric), width="stretch")
     with t2:
         reps = sorted(oof["repeat"].unique())
         rsel = st.radio("CV repeat", ["All repeats"] + [f"Repeat {r}" for r in reps], horizontal=True)
         r = None if rsel == "All repeats" else int(rsel.split()[-1])
-        st.plotly_chart(fig_roc(oof, chosen, r), use_container_width=True)
+        st.plotly_chart(fig_roc(oof, chosen, r), width="stretch")
         note("ROC curves pool the out-of-fold scores of one repeat (every sample predicted exactly once, by a model "
              "that never saw that patient). Scores are P(tumor) for LR/RF/dummy and SVM decision values; "
              "ROC-AUC never uses hard class labels.")
@@ -64,7 +64,7 @@ with guarded("model results"):
         for c, m in zip(cols, chosen):
             with c:
                 st.plotly_chart(fig_confusion(summ["models"][m]["confusion_matrix_repeat0"], MODEL_LABELS[m]),
-                                use_container_width=True)
+                                width="stretch")
         st.caption("Out-of-fold predictions from repeat 0 (50 samples).")
     with t4:
         try:
@@ -80,8 +80,8 @@ with guarded("model results"):
             fig.update_layout(xaxis_title="Patients in training set (2 samples each)",
                               yaxis_title="Held-out score (mean ± SD)", yaxis_range=[0.3, 1.05])
             st.plotly_chart(_style(fig, "Learning curve — logistic regression, fixed hyperparameters", 420),
-                            use_container_width=True)
-            st.dataframe(g.round(3), use_container_width=True)
+                            width="stretch")
+            st.dataframe(g.round(3), width="stretch")
             note("Each point trains on <i>n</i> randomly chosen patients and tests on all remaining patients "
                  f"({lc['repeat'].nunique()} random draws per size). The signal is learned from very few patients — a "
                  "sign of how large and consistent the tumor/adjacent-normal difference is.")
@@ -90,7 +90,7 @@ with guarded("model results"):
     with t5:
         p = params[params["model"].isin(chosen)].copy()
         p["model"] = p["model"].map(MODEL_LABELS)
-        st.dataframe(p.dropna(axis=1, how="all"), use_container_width=True, hide_index=True, height=320)
+        st.dataframe(p.dropna(axis=1, how="all"), width="stretch", hide_index=True, height=320)
         tied = params.dropna(subset=["n_tied_at_best"])
         tied = tied[tied["model"].isin(chosen)]
         if len(tied) and (tied["n_tied_at_best"] > 1).any():
@@ -98,7 +98,7 @@ with guarded("model results"):
                  "for the best inner-CV score (often all at ROC-AUC = 1.0). GridSearchCV then keeps the <b>first</b> "
                  "tied grid point, so the 'selected' hyperparameters are not meaningfully better than the alternatives.",
                  warn=True)
-        st.plotly_chart(fig_runtime(fm[fm["model"].isin(chosen)]), use_container_width=True)
+        st.plotly_chart(fig_runtime(fm[fm["model"].isin(chosen)]), width="stretch")
         with st.expander("Final model cards (refit on all samples for interpretation only)"):
             for m, card in data.model_cards().items():
                 if m in chosen:
