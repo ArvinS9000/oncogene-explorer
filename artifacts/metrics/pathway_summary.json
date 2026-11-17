@@ -1,0 +1,16 @@
+{
+  "universe_size": 17324,
+  "n_up_genes": 361,
+  "n_down_genes": 461,
+  "n_conflicting_genes": 0,
+  "libraries": {
+    "Reactome_2022": {
+      "n_sets": 1818,
+      "mean_fraction_of_set_genes_on_array": 0.892
+    },
+    "GO_Biological_Process_2023": {
+      "n_sets": 5407,
+      "mean_fraction_of_set_genes_on_array": 0.881
+    }
+  }
+}

@@ -1,0 +1,87 @@
+# OncoGene Explorer experiment configuration.
+# Every pipeline stage reads this file; a copy is persisted next to the artifacts it produced.
+
+experiment_name: gse109169_tumor_vs_adjacent_normal
+model_version: "0.1.0"
+seed: 42
+
+dataset:
+  accession: GSE109169
+  platform: GPL5175
+  expected_samples: 50
+  expected_patients: 25
+  series_matrix_url: "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE109nnn/GSE109169/matrix/GSE109169_series_matrix.txt.gz"
+  # Platform-only annotation table (the family SOFT file is ~4.5 GB because it bundles every sample).
+  platform_table_url: "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL5175&targ=self&form=text&view=data"
+  gene_set_url_template: "https://maayanlab.cloud/Enrichr/geneSetLibrary?mode=text&libraryName={library}"
+  gene_set_libraries:
+    - Reactome_2022
+    - GO_Biological_Process_2023
+
+preprocessing:
+  # Label-free, deterministic filters applied once to the whole matrix (cannot leak).
+  keep_categories: [main]          # Affymetrix design category; drops controls/background probes
+  drop_exactly_constant: true      # SD == 0 across all samples
+  near_constant_sd: 0.10           # reported only - near-constant probes are NOT removed globally
+  log_scale_max_threshold: 30      # max value below this => data treated as already log2
+
+differential_expression:
+  test: paired_t                   # primary test; Wilcoxon signed-rank reported as sensitivity check
+  fdr_alpha: 0.05
+  min_abs_log2fc: 1.0
+
+pathway:
+  min_set_size: 10
+  max_set_size: 500
+  fdr_alpha: 0.05
+  # Genes passing DE thresholds (split by direction) are tested against all annotated genes on the array.
+
+modeling:
+  outer_folds: 5
+  outer_repeats: 3
+  inner_folds: 4
+  scoring: roc_auc
+  n_jobs: -1
+  # In-pipeline unsupervised pre-filter: keep the top-N most variable probes of the TRAINING fold.
+  variance_top_n: 5000
+  models:
+    dummy:
+      param_grid: {}
+    logistic_regression:
+      param_grid:
+        select__k: [50, 500]
+        clf__C: [0.01, 0.1, 1.0]
+    random_forest:
+      n_estimators: 300
+      param_grid:
+        select__k: [200, 2000]
+        clf__max_depth: [null, 5]
+        clf__min_samples_leaf: [1, 3]
+        clf__max_features: [sqrt, 0.1]
+    svm:
+      param_grid:
+        - select__k: [50, 500]
+          clf__kernel: [linear]
+          clf__C: [0.01, 0.1, 1.0]
+        - select__k: [50, 500]
+          clf__kernel: [rbf]
+          clf__C: [1.0, 10.0]
+          clf__gamma: [scale]
+
+interpretation:
+  permutation_repeats: 20
+  top_n_genes: 50
+  bootstrap_iterations: 2000
+
+learning_curve:
+  # Fixed, untuned hyperparameters chosen a priori (no tuning inside this experiment).
+  model: logistic_regression
+  params: {select__k: 50, clf__C: 0.1}
+  train_patients: [1, 2, 3, 4, 6, 8, 12, 16, 20]
+  repeats: 30
+
+marker_panels:
+  # Fixed literature marker panels (label-free) used to describe tissue composition.
+  adipocyte: [ADIPOQ, PLIN1, LEP, FABP4, CIDEA, CIDEC, LPL, GPD1, PLIN4]
+  proliferation: [MKI67, TOP2A, CCNB1, BUB1, CDK1, TPX2, AURKA, CENPF, BIRC5]
+  myoepithelial_basal: [KRT5, KRT14, KRT17, TP63, ACTA2, MYH11, OXTR]

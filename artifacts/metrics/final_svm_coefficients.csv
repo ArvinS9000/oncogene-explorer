@@ -1,0 +1,51 @@
+probe_id,coefficient,abs_coefficient,direction,gene_symbol,gene_description
+3047581,0.05844507693903408,0.05844507693903408,higher in tumor-predicted,INHBA,"inhibin, beta A"
+2610972,-0.0575760373284829,0.0575760373284829,higher in normal-predicted,SYN2,synapsin II
+3444043,0.05617076143713496,0.05617076143713496,higher in tumor-predicted,OLR1,oxidized low density lipoprotein (lectin-like) receptor 1
+2414366,-0.050194042543660694,0.050194042543660694,higher in normal-predicted,PPAP2B,phosphatidic acid phosphatase type 2B
+3174121,-0.04686597857929995,0.04686597857929995,higher in normal-predicted,MAMDC2,MAM domain containing 2
+2648677,-0.045104364540532224,0.045104364540532224,higher in normal-predicted,MME,membrane metallo-endopeptidase
+2498274,-0.04424363489900484,0.04424363489900484,higher in normal-predicted,C2ORF40,chromosome 2 open reading frame 40
+3102372,0.0421984345530231,0.0421984345530231,higher in tumor-predicted,SULF1,sulfatase 1
+3519309,-0.042015256923069455,0.042015256923069455,higher in normal-predicted,SPRY2,sprouty homolog 2 (Drosophila)
+2615360,-0.04196292947562463,0.04196292947562463,higher in normal-predicted,TGFBR2,"transforming growth factor, beta receptor II (70/80kDa)"
+2917951,-0.04139413137240183,0.04139413137240183,higher in normal-predicted,FHL5,four and a half LIM domains 5
+2995589,-0.038727216548199724,0.038727216548199724,higher in normal-predicted,AQP1,aquaporin 1 (Colton blood group)
+3537164,-0.03849782994817641,0.03849782994817641,higher in normal-predicted,PELI2,pellino homolog 2 (Drosophila)
+2360700,0.03825168015481016,0.03825168015481016,higher in tumor-predicted,RAG1AP1,recombination activating gene 1 activating protein 1
+4004044,-0.0381879210435484,0.0381879210435484,higher in normal-predicted,DMD,dystrophin
+2699623,-0.03784194116654975,0.03784194116654975,higher in normal-predicted,PLSCR4,phospholipid scramblase 4
+2607568,-0.03782917535143563,0.03782917535143563,higher in normal-predicted,CHL1,cell adhesion molecule with homology to L1CAM (close homolog of L1)
+2882834,-0.037781263828216866,0.037781263828216866,higher in normal-predicted,C5ORF4,chromosome 5 open reading frame 4
+3927480,-0.03752507257165619,0.03752507257165619,higher in normal-predicted,ADAMTS5,"ADAM metallopeptidase with thrombospondin type 1 motif, 5"
+2742109,-0.03733092216359629,0.03733092216359629,higher in normal-predicted,FGF2,fibroblast growth factor 2 (basic)
+3745525,-0.03580408898890229,0.03580408898890229,higher in normal-predicted,TMEM220,transmembrane protein 220
+2788926,-0.034799647005860836,0.034799647005860836,higher in normal-predicted,NR3C2,"nuclear receptor subfamily 3, group C, member 2"
+3039485,-0.03470110801059372,0.03470110801059372,higher in normal-predicted,MEOX2,mesenchyme homeobox 2
+2592532,-0.03363363983794672,0.03363363983794672,higher in normal-predicted,SDPR,serum deprivation response
+4000538,-0.031670934487237394,0.031670934487237394,higher in normal-predicted,FIGF,c-fos induced growth factor (vascular endothelial growth factor D)
+4027639,-0.030691677369020724,0.030691677369020724,higher in normal-predicted,F8,"coagulation factor VIII, procoagulant component"
+3985717,-0.030056550948204763,0.030056550948204763,higher in normal-predicted,PLP1,proteolipid protein 1
+2591421,-0.029659914786046678,0.029659914786046678,higher in normal-predicted,TFPI,tissue factor pathway inhibitor (lipoprotein-associated coagulation inhibitor)
+2436401,0.02908622026587324,0.02908622026587324,higher in tumor-predicted,JTB,jumping translocation breakpoint
+2742581,-0.028861703496130608,0.028861703496130608,higher in normal-predicted,FAT4,FAT tumor suppressor homolog 4 (Drosophila)
+3020302,-0.028735209201920596,0.028735209201920596,higher in normal-predicted,CAV1,"caveolin 1, caveolae protein, 22kDa"
+3290649,-0.02763176424012773,0.02763176424012773,higher in normal-predicted,FAM13C,"family with sequence similarity 13, member C"
+3362826,-0.026817588248444827,0.026817588248444827,higher in normal-predicted,LYVE1,lymphatic vessel endothelial hyaluronan receptor 1
+2615060,-0.02630091004393529,0.02630091004393529,higher in normal-predicted,RBMS3,"RNA binding motif, single stranded interacting protein 3"
+2883878,-0.026243727211643485,0.026243727211643485,higher in normal-predicted,EBF1,early B-cell factor 1
+2779271,-0.025469929801089506,0.025469929801089506,higher in normal-predicted,ADH1C,"alcohol dehydrogenase 1C (class I), gamma polypeptide"
+3830189,-0.025074427907597473,0.025074427907597473,higher in normal-predicted,FXYD1,FXYD domain containing ion transport regulator 1
+3768880,-0.024986229737983142,0.024986229737983142,higher in normal-predicted,ABCA10,"ATP-binding cassette, sub-family A (ABC1), member 10"
+2762088,-0.023927040175338667,0.023927040175338667,higher in normal-predicted,LDB2,LIM domain binding 2
+2701109,-0.023651645661828348,0.023651645661828348,higher in normal-predicted,IGSF10,"immunoglobulin superfamily, member 10"
+4004853,-0.02353114347190385,0.02353114347190385,higher in normal-predicted,SRPX,"sushi-repeat-containing protein, X-linked"
+2779231,-0.02220307221459249,0.02220307221459249,higher in normal-predicted,ADH1B,"alcohol dehydrogenase 1B (class I), beta polypeptide"
+3446297,-0.021910226238507875,0.021910226238507875,higher in normal-predicted,RERGL,RERG/RAS-like
+2340433,-0.020311783063789862,0.020311783063789862,higher in normal-predicted,LEPR,leptin receptor
+3142381,-0.018670933503069698,0.018670933503069698,higher in normal-predicted,FABP4,"fatty acid binding protein 4, adipocyte"
+3768791,-0.01769381976884926,0.01769381976884926,higher in normal-predicted,ABCA6,"ATP-binding cassette, sub-family A (ABC1), member 6"
+3768627,-0.017459876750521176,0.017459876750521176,higher in normal-predicted,ABCA8,"ATP-binding cassette, sub-family A (ABC1), member 8"
+4018080,-0.01731237260552111,0.01731237260552111,higher in normal-predicted,CHRDL1,chordin-like 1
+3768703,-0.015360555643271514,0.015360555643271514,higher in normal-predicted,ABCA9,"ATP-binding cassette, sub-family A (ABC1), member 9"
+3019793,-0.014133635347281962,0.014133635347281962,higher in normal-predicted,FOXP2,forkhead box P2

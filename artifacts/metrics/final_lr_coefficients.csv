@@ -1,0 +1,51 @@
+probe_id,coefficient,abs_coefficient,direction,gene_symbol,gene_description
+3047581,0.055624869371697055,0.055624869371697055,higher in tumor-predicted,INHBA,"inhibin, beta A"
+2498274,-0.05472873859221059,0.05472873859221059,higher in normal-predicted,C2ORF40,chromosome 2 open reading frame 40
+4004044,-0.05216127902235438,0.05216127902235438,higher in normal-predicted,DMD,dystrophin
+3444043,0.051878296580323814,0.051878296580323814,higher in tumor-predicted,OLR1,oxidized low density lipoprotein (lectin-like) receptor 1
+2610972,-0.051696522365865916,0.051696522365865916,higher in normal-predicted,SYN2,synapsin II
+4000538,-0.050802189459290964,0.050802189459290964,higher in normal-predicted,FIGF,c-fos induced growth factor (vascular endothelial growth factor D)
+3102372,0.05049068934316014,0.05049068934316014,higher in tumor-predicted,SULF1,sulfatase 1
+2648677,-0.05039749488893008,0.05039749488893008,higher in normal-predicted,MME,membrane metallo-endopeptidase
+3519309,-0.05015766138183378,0.05015766138183378,higher in normal-predicted,SPRY2,sprouty homolog 2 (Drosophila)
+2414366,-0.04984552578844296,0.04984552578844296,higher in normal-predicted,PPAP2B,phosphatidic acid phosphatase type 2B
+3745525,-0.049422305305396236,0.049422305305396236,higher in normal-predicted,TMEM220,transmembrane protein 220
+2788926,-0.049367482508914484,0.049367482508914484,higher in normal-predicted,NR3C2,"nuclear receptor subfamily 3, group C, member 2"
+3174121,-0.04872043722765207,0.04872043722765207,higher in normal-predicted,MAMDC2,MAM domain containing 2
+2591421,-0.04862480824873732,0.04862480824873732,higher in normal-predicted,TFPI,tissue factor pathway inhibitor (lipoprotein-associated coagulation inhibitor)
+2360700,0.048282752822490005,0.048282752822490005,higher in tumor-predicted,RAG1AP1,recombination activating gene 1 activating protein 1
+3830189,-0.04803961451583554,0.04803961451583554,higher in normal-predicted,FXYD1,FXYD domain containing ion transport regulator 1
+3927480,-0.04784471784399886,0.04784471784399886,higher in normal-predicted,ADAMTS5,"ADAM metallopeptidase with thrombospondin type 1 motif, 5"
+2436401,0.04746747090499004,0.04746747090499004,higher in tumor-predicted,JTB,jumping translocation breakpoint
+3039485,-0.04740441293431398,0.04740441293431398,higher in normal-predicted,MEOX2,mesenchyme homeobox 2
+2882834,-0.04733717611899146,0.04733717611899146,higher in normal-predicted,C5ORF4,chromosome 5 open reading frame 4
+2995589,-0.04714517023483409,0.04714517023483409,higher in normal-predicted,AQP1,aquaporin 1 (Colton blood group)
+2592532,-0.04712393452500631,0.04712393452500631,higher in normal-predicted,SDPR,serum deprivation response
+2615360,-0.04700644077717524,0.04700644077717524,higher in normal-predicted,TGFBR2,"transforming growth factor, beta receptor II (70/80kDa)"
+2699623,-0.046886299507436016,0.046886299507436016,higher in normal-predicted,PLSCR4,phospholipid scramblase 4
+2701109,-0.0467204026172738,0.0467204026172738,higher in normal-predicted,IGSF10,"immunoglobulin superfamily, member 10"
+3768880,-0.0466786259146601,0.0466786259146601,higher in normal-predicted,ABCA10,"ATP-binding cassette, sub-family A (ABC1), member 10"
+2917951,-0.04653639514141863,0.04653639514141863,higher in normal-predicted,FHL5,four and a half LIM domains 5
+2607568,-0.046514476746737275,0.046514476746737275,higher in normal-predicted,CHL1,cell adhesion molecule with homology to L1CAM (close homolog of L1)
+3537164,-0.04633026955256377,0.04633026955256377,higher in normal-predicted,PELI2,pellino homolog 2 (Drosophila)
+2742109,-0.04632473670288588,0.04632473670288588,higher in normal-predicted,FGF2,fibroblast growth factor 2 (basic)
+3985717,-0.046020802930854206,0.046020802930854206,higher in normal-predicted,PLP1,proteolipid protein 1
+2779271,-0.045449966591565215,0.045449966591565215,higher in normal-predicted,ADH1C,"alcohol dehydrogenase 1C (class I), gamma polypeptide"
+3362826,-0.04538193431582216,0.04538193431582216,higher in normal-predicted,LYVE1,lymphatic vessel endothelial hyaluronan receptor 1
+2762088,-0.045101721565770345,0.045101721565770345,higher in normal-predicted,LDB2,LIM domain binding 2
+2742581,-0.044646970261077584,0.044646970261077584,higher in normal-predicted,FAT4,FAT tumor suppressor homolog 4 (Drosophila)
+4027639,-0.04460782684568636,0.04460782684568636,higher in normal-predicted,F8,"coagulation factor VIII, procoagulant component"
+3446297,-0.04443037531530181,0.04443037531530181,higher in normal-predicted,RERGL,RERG/RAS-like
+2340433,-0.0442413425282896,0.0442413425282896,higher in normal-predicted,LEPR,leptin receptor
+3290649,-0.04414631818361163,0.04414631818361163,higher in normal-predicted,FAM13C,"family with sequence similarity 13, member C"
+2615060,-0.04405273069319361,0.04405273069319361,higher in normal-predicted,RBMS3,"RNA binding motif, single stranded interacting protein 3"
+3020302,-0.04398829104668782,0.04398829104668782,higher in normal-predicted,CAV1,"caveolin 1, caveolae protein, 22kDa"
+2779231,-0.04366329875789611,0.04366329875789611,higher in normal-predicted,ADH1B,"alcohol dehydrogenase 1B (class I), beta polypeptide"
+4004853,-0.04365640689108139,0.04365640689108139,higher in normal-predicted,SRPX,"sushi-repeat-containing protein, X-linked"
+4018080,-0.043329028888941475,0.043329028888941475,higher in normal-predicted,CHRDL1,chordin-like 1
+3768791,-0.043171719681281764,0.043171719681281764,higher in normal-predicted,ABCA6,"ATP-binding cassette, sub-family A (ABC1), member 6"
+3142381,-0.0430482134688331,0.0430482134688331,higher in normal-predicted,FABP4,"fatty acid binding protein 4, adipocyte"
+3768703,-0.042810323698958874,0.042810323698958874,higher in normal-predicted,ABCA9,"ATP-binding cassette, sub-family A (ABC1), member 9"
+3768627,-0.04241167878646283,0.04241167878646283,higher in normal-predicted,ABCA8,"ATP-binding cassette, sub-family A (ABC1), member 8"
+2883878,-0.04197775329754875,0.04197775329754875,higher in normal-predicted,EBF1,early B-cell factor 1
+3019793,-0.04097588840401303,0.04097588840401303,higher in normal-predicted,FOXP2,forkhead box P2

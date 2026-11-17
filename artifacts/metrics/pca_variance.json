@@ -1,0 +1,10 @@
+{
+  "explained_variance_ratio": [
+    0.33512415076403423,
+    0.10613957806258478,
+    0.08512422619442343,
+    0.0499252451523728,
+    0.03654314187614866
+  ],
+  "note": "Exploratory PCA on top-2000 variable probes, all samples."
+}

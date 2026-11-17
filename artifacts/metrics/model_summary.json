@@ -1,0 +1,538 @@
+{
+  "experiment_name": "gse109169_tumor_vs_adjacent_normal",
+  "model_version": "0.1.0",
+  "seed": 42,
+  "n_samples": 50,
+  "n_patients": 25,
+  "n_features": 17868,
+  "fast_mode": false,
+  "cv": {
+    "outer_folds": 5,
+    "outer_repeats": 3,
+    "inner_folds": 4,
+    "scoring": "roc_auc"
+  },
+  "total_seconds": 1705.8403240999905,
+  "models": {
+    "dummy": {
+      "model": "dummy",
+      "n_outer_folds": 15,
+      "fit_seconds_mean": 0.07137606665492058,
+      "predict_seconds_mean": 0.010428133350796998,
+      "fold": {
+        "accuracy": {
+          "mean": 0.5,
+          "sd": 0.0,
+          "min": 0.5,
+          "max": 0.5
+        },
+        "precision": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "recall": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "specificity": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "f1": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "balanced_accuracy": {
+          "mean": 0.5,
+          "sd": 0.0,
+          "min": 0.5,
+          "max": 0.5
+        },
+        "roc_auc": {
+          "mean": 0.5,
+          "sd": 0.0,
+          "min": 0.5,
+          "max": 0.5
+        }
+      },
+      "pooled": {
+        "accuracy": {
+          "mean_over_repeats": 0.5,
+          "repeat0": 0.5,
+          "ci95_patient_bootstrap_repeat0": [
+            0.5,
+            0.5
+          ]
+        },
+        "precision": {
+          "mean_over_repeats": 0.0,
+          "repeat0": 0.0,
+          "ci95_patient_bootstrap_repeat0": [
+            0.0,
+            0.0
+          ]
+        },
+        "recall": {
+          "mean_over_repeats": 0.0,
+          "repeat0": 0.0,
+          "ci95_patient_bootstrap_repeat0": [
+            0.0,
+            0.0
+          ]
+        },
+        "specificity": {
+          "mean_over_repeats": 1.0,
+          "repeat0": 1.0,
+          "ci95_patient_bootstrap_repeat0": [
+            1.0,
+            1.0
+          ]
+        },
+        "f1": {
+          "mean_over_repeats": 0.0,
+          "repeat0": 0.0,
+          "ci95_patient_bootstrap_repeat0": [
+            0.0,
+            0.0
+          ]
+        },
+        "balanced_accuracy": {
+          "mean_over_repeats": 0.5,
+          "repeat0": 0.5,
+          "ci95_patient_bootstrap_repeat0": [
+            0.5,
+            0.5
+          ]
+        },
+        "roc_auc": {
+          "mean_over_repeats": 0.5,
+          "repeat0": 0.5,
+          "ci95_patient_bootstrap_repeat0": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      "confusion_matrix_summed_over_repeats": {
+        "tn": 75,
+        "fp": 0,
+        "fn": 75,
+        "tp": 0
+      },
+      "confusion_matrix_repeat0": {
+        "tn": 25,
+        "fp": 0,
+        "fn": 25,
+        "tp": 0
+      },
+      "patient_level_exact_ci": {
+        "patients_fully_correct": 0,
+        "n_patients": 25,
+        "proportion": 0.0,
+        "ci95": [
+          0.0,
+          0.13718517153071252
+        ],
+        "max_plausible_patient_error_rate": 1.0
+      }
+    },
+    "logistic_regression": {
+      "model": "logistic_regression",
+      "n_outer_folds": 15,
+      "fit_seconds_mean": 0.7844186133161808,
+      "predict_seconds_mean": 0.0125374666803206,
+      "fold": {
+        "accuracy": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "precision": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "recall": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "specificity": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "f1": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "balanced_accuracy": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "roc_auc": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "pooled": {
+        "accuracy": {
+          "mean_over_repeats": 1.0,
+          "repeat0": 1.0,
+          "ci95_patient_bootstrap_repeat0": [
+            1.0,
+            1.0
+          ]
+        },
+        "precision": {
+          "mean_over_repeats": 1.0,
+          "repeat0": 1.0,
+          "ci95_patient_bootstrap_repeat0": [
+            1.0,
+            1.0
+          ]
+        },
+        "recall": {
+          "mean_over_repeats": 1.0,
+          "repeat0": 1.0,
+          "ci95_patient_bootstrap_repeat0": [
+            1.0,
+            1.0
+          ]
+        },
+        "specificity": {
+          "mean_over_repeats": 1.0,
+          "repeat0": 1.0,
+          "ci95_patient_bootstrap_repeat0": [
+            1.0,
+            1.0
+          ]
+        },
+        "f1": {
+          "mean_over_repeats": 1.0,
+          "repeat0": 1.0,
+          "ci95_patient_bootstrap_repeat0": [
+            1.0,
+            1.0
+          ]
+        },
+        "balanced_accuracy": {
+          "mean_over_repeats": 1.0,
+          "repeat0": 1.0,
+          "ci95_patient_bootstrap_repeat0": [
+            1.0,
+            1.0
+          ]
+        },
+        "roc_auc": {
+          "mean_over_repeats": 1.0,
+          "repeat0": 1.0,
+          "ci95_patient_bootstrap_repeat0": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "confusion_matrix_summed_over_repeats": {
+        "tn": 75,
+        "fp": 0,
+        "fn": 0,
+        "tp": 75
+      },
+      "confusion_matrix_repeat0": {
+        "tn": 25,
+        "fp": 0,
+        "fn": 0,
+        "tp": 25
+      },
+      "patient_level_exact_ci": {
+        "patients_fully_correct": 25,
+        "n_patients": 25,
+        "proportion": 1.0,
+        "ci95": [
+          0.8628148284692875,
+          1.0
+        ],
+        "max_plausible_patient_error_rate": 0.13718517153071252
+      }
+    },
+    "random_forest": {
+      "model": "random_forest",
+      "n_outer_folds": 15,
+      "fit_seconds_mean": 3.9108066866717612,
+      "predict_seconds_mean": 0.03846743331911663,
+      "fold": {
+        "accuracy": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "precision": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "recall": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "specificity": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "f1": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "balanced_accuracy": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "roc_auc": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "pooled": {
+        "accuracy": {
+          "mean_over_repeats": 1.0,
+          "repeat0": 1.0,
+          "ci95_patient_bootstrap_repeat0": [
+            1.0,
+            1.0
+          ]
+        },
+        "precision": {
+          "mean_over_repeats": 1.0,
+          "repeat0": 1.0,
+          "ci95_patient_bootstrap_repeat0": [
+            1.0,
+            1.0
+          ]
+        },
+        "recall": {
+          "mean_over_repeats": 1.0,
+          "repeat0": 1.0,
+          "ci95_patient_bootstrap_repeat0": [
+            1.0,
+            1.0
+          ]
+        },
+        "specificity": {
+          "mean_over_repeats": 1.0,
+          "repeat0": 1.0,
+          "ci95_patient_bootstrap_repeat0": [
+            1.0,
+            1.0
+          ]
+        },
+        "f1": {
+          "mean_over_repeats": 1.0,
+          "repeat0": 1.0,
+          "ci95_patient_bootstrap_repeat0": [
+            1.0,
+            1.0
+          ]
+        },
+        "balanced_accuracy": {
+          "mean_over_repeats": 1.0,
+          "repeat0": 1.0,
+          "ci95_patient_bootstrap_repeat0": [
+            1.0,
+            1.0
+          ]
+        },
+        "roc_auc": {
+          "mean_over_repeats": 1.0,
+          "repeat0": 1.0,
+          "ci95_patient_bootstrap_repeat0": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "confusion_matrix_summed_over_repeats": {
+        "tn": 75,
+        "fp": 0,
+        "fn": 0,
+        "tp": 75
+      },
+      "confusion_matrix_repeat0": {
+        "tn": 25,
+        "fp": 0,
+        "fn": 0,
+        "tp": 25
+      },
+      "patient_level_exact_ci": {
+        "patients_fully_correct": 25,
+        "n_patients": 25,
+        "proportion": 1.0,
+        "ci95": [
+          0.8628148284692875,
+          1.0
+        ],
+        "max_plausible_patient_error_rate": 0.13718517153071252
+      }
+    },
+    "svm": {
+      "model": "svm",
+      "n_outer_folds": 15,
+      "fit_seconds_mean": 0.6819805933395401,
+      "predict_seconds_mean": 0.013096253317780793,
+      "fold": {
+        "accuracy": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "precision": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "recall": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "specificity": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "f1": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "balanced_accuracy": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "roc_auc": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "pooled": {
+        "accuracy": {
+          "mean_over_repeats": 1.0,
+          "repeat0": 1.0,
+          "ci95_patient_bootstrap_repeat0": [
+            1.0,
+            1.0
+          ]
+        },
+        "precision": {
+          "mean_over_repeats": 1.0,
+          "repeat0": 1.0,
+          "ci95_patient_bootstrap_repeat0": [
+            1.0,
+            1.0
+          ]
+        },
+        "recall": {
+          "mean_over_repeats": 1.0,
+          "repeat0": 1.0,
+          "ci95_patient_bootstrap_repeat0": [
+            1.0,
+            1.0
+          ]
+        },
+        "specificity": {
+          "mean_over_repeats": 1.0,
+          "repeat0": 1.0,
+          "ci95_patient_bootstrap_repeat0": [
+            1.0,
+            1.0
+          ]
+        },
+        "f1": {
+          "mean_over_repeats": 1.0,
+          "repeat0": 1.0,
+          "ci95_patient_bootstrap_repeat0": [
+            1.0,
+            1.0
+          ]
+        },
+        "balanced_accuracy": {
+          "mean_over_repeats": 1.0,
+          "repeat0": 1.0,
+          "ci95_patient_bootstrap_repeat0": [
+            1.0,
+            1.0
+          ]
+        },
+        "roc_auc": {
+          "mean_over_repeats": 1.0,
+          "repeat0": 1.0,
+          "ci95_patient_bootstrap_repeat0": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "confusion_matrix_summed_over_repeats": {
+        "tn": 75,
+        "fp": 0,
+        "fn": 0,
+        "tp": 75
+      },
+      "confusion_matrix_repeat0": {
+        "tn": 25,
+        "fp": 0,
+        "fn": 0,
+        "tp": 25
+      },
+      "patient_level_exact_ci": {
+        "patients_fully_correct": 25,
+        "n_patients": 25,
+        "proportion": 1.0,
+        "ci95": [
+          0.8628148284692875,
+          1.0
+        ],
+        "max_plausible_patient_error_rate": 0.13718517153071252
+      }
+    }
+  }
+}

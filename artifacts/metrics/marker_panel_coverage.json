@@ -1,0 +1,43 @@
+{
+  "adipocyte": {
+    "found": [
+      "ADIPOQ",
+      "CIDEA",
+      "CIDEC",
+      "FABP4",
+      "GPD1",
+      "LEP",
+      "LPL",
+      "PLIN1"
+    ],
+    "missing": [
+      "PLIN4"
+    ]
+  },
+  "proliferation": {
+    "found": [
+      "AURKA",
+      "BIRC5",
+      "BUB1",
+      "CCNB1",
+      "CDK1",
+      "CENPF",
+      "MKI67",
+      "TOP2A",
+      "TPX2"
+    ],
+    "missing": []
+  },
+  "myoepithelial_basal": {
+    "found": [
+      "ACTA2",
+      "KRT14",
+      "KRT17",
+      "KRT5",
+      "MYH11",
+      "OXTR",
+      "TP63"
+    ],
+    "missing": []
+  }
+}

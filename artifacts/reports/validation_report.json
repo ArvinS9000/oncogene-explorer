@@ -1,0 +1,102 @@
+[
+  {
+    "name": "sample_count",
+    "status": "pass",
+    "detail": "50 samples (expected 50)",
+    "value": 50
+  },
+  {
+    "name": "patient_count",
+    "status": "pass",
+    "detail": "25 unique patients (expected 25)",
+    "value": 25
+  },
+  {
+    "name": "duplicate_sample_ids",
+    "status": "pass",
+    "detail": "0 duplicated sample IDs",
+    "value": 0
+  },
+  {
+    "name": "duplicate_probe_ids",
+    "status": "pass",
+    "detail": "0 duplicated probe IDs",
+    "value": 0
+  },
+  {
+    "name": "missing_patient_ids",
+    "status": "pass",
+    "detail": "0 samples without a patient identifier",
+    "value": 0
+  },
+  {
+    "name": "matched_pairs",
+    "status": "pass",
+    "detail": "all patients have exactly one tumor + one adjacent-normal sample",
+    "value": 25
+  },
+  {
+    "name": "label_values",
+    "status": "pass",
+    "detail": "label values [0, 1]",
+    "value": null
+  },
+  {
+    "name": "label_balance",
+    "status": "pass",
+    "detail": "tumor=25, adjacent normal=25",
+    "value": null
+  },
+  {
+    "name": "platform",
+    "status": "pass",
+    "detail": "platform(s): ['GPL5175']",
+    "value": null
+  },
+  {
+    "name": "non_numeric_values",
+    "status": "pass",
+    "detail": "0 non-numeric entries",
+    "value": 0
+  },
+  {
+    "name": "missing_values",
+    "status": "pass",
+    "detail": "0 missing expression values",
+    "value": 0
+  },
+  {
+    "name": "constant_features",
+    "status": "pass",
+    "detail": "0 probes with zero variance",
+    "value": 0
+  },
+  {
+    "name": "near_constant_features",
+    "status": "warn",
+    "detail": "17 probes with SD < 0.1 (reported, not removed)",
+    "value": 17
+  },
+  {
+    "name": "expression_scale",
+    "status": "pass",
+    "detail": "range [1.51, 13.99] -> consistent with log2 RMA; no further log transform",
+    "value": {
+      "min": 1.51,
+      "max": 13.99,
+      "log2_like": true
+    }
+  },
+  {
+    "name": "per_sample_scale_consistency",
+    "status": "pass",
+    "detail": "per-sample medians span 0.280 log2 units; IQR range 1.85-2.43",
+    "value": 0.28000000000000025
+  },
+  {
+    "name": "matrix_metadata_alignment",
+    "status": "pass",
+    "detail": "rows aligned with metadata",
+    "value": null
+  }
+]

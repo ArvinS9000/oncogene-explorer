@@ -1,0 +1,201 @@
+probe_id,impurity_importance,gene_symbol,gene_description
+4004044,0.03666666666666667,DMD,dystrophin
+3745525,0.03333333333333333,TMEM220,transmembrane protein 220
+2592532,0.03,SDPR,serum deprivation response
+3102096,0.03,PREX2,"phosphatidylinositol-3,4,5-trisphosphate-dependent Rac exchange factor 2"
+2917951,0.02666666666666667,FHL5,four and a half LIM domains 5
+3290649,0.023333333333333334,FAM13C,"family with sequence similarity 13, member C"
+2699623,0.023333333333333334,PLSCR4,phospholipid scramblase 4
+2607568,0.02,CHL1,cell adhesion molecule with homology to L1CAM (close homolog of L1)
+2983142,0.02,PARK2,"parkinson protein 2, E3 ubiquitin protein ligase (parkin)"
+3047581,0.02,INHBA,"inhibin, beta A"
+4000538,0.02,FIGF,c-fos induced growth factor (vascular endothelial growth factor D)
+3174121,0.02,MAMDC2,MAM domain containing 2
+2779271,0.02,ADH1C,"alcohol dehydrogenase 1C (class I), gamma polypeptide"
+3676127,0.02,MRPS34,mitochondrial ribosomal protein S34
+3444043,0.016666666666666666,OLR1,oxidized low density lipoprotein (lectin-like) receptor 1
+3768791,0.016666666666666666,ABCA6,"ATP-binding cassette, sub-family A (ABC1), member 6"
+3939470,0.016666666666666666,MMP11,matrix metallopeptidase 11 (stromelysin 3)
+2883878,0.016666666666666666,EBF1,early B-cell factor 1
+2934521,0.013333333333333334,SLC22A3,"solute carrier family 22 (extraneuronal monoamine transporter), member 3"
+3626312,0.013333333333333334,ALDH1A2,"aldehyde dehydrogenase 1 family, member A2"
+3927480,0.013333333333333334,ADAMTS5,"ADAM metallopeptidase with thrombospondin type 1 motif, 5"
+3039485,0.013333333333333334,MEOX2,mesenchyme homeobox 2
+3768627,0.013333333333333334,ABCA8,"ATP-binding cassette, sub-family A (ABC1), member 8"
+3985717,0.013333333333333334,PLP1,proteolipid protein 1
+2701109,0.013333333333333334,IGSF10,"immunoglobulin superfamily, member 10"
+3830189,0.013333333333333334,FXYD1,FXYD domain containing ion transport regulator 1
+2482505,0.013333333333333334,SPTBN1,"spectrin, beta, non-erythrocytic 1"
+2742581,0.01,FAT4,FAT tumor suppressor homolog 4 (Drosophila)
+2615060,0.01,RBMS3,"RNA binding motif, single stranded interacting protein 3"
+2762088,0.01,LDB2,LIM domain binding 2
+2813060,0.01,PIK3R1,"phosphoinositide-3-kinase, regulatory subunit 1 (alpha)"
+2414366,0.01,PPAP2B,phosphatidic acid phosphatase type 2B
+2995667,0.01,ADCYAP1R1,adenylate cyclase activating polypeptide 1 (pituitary) receptor type I
+4013549,0.01,ITM2A,integral membrane protein 2A
+3768880,0.01,ABCA10,"ATP-binding cassette, sub-family A (ABC1), member 10"
+3822195,0.01,NACC1,"nucleus accumbens associated 1, BEN and BTB (POZ) domain containing"
+3984655,0.01,CENPI,centromere protein I
+2591421,0.01,TFPI,tissue factor pathway inhibitor (lipoprotein-associated coagulation inhibitor)
+2871896,0.01,CDO1,"cysteine dioxygenase, type I"
+3020302,0.01,CAV1,"caveolin 1, caveolae protein, 22kDa"
+3250990,0.01,UNC5B,unc-5 homolog B (C. elegans)
+3286602,0.009725877192982455,CXCL12,chemokine (C-X-C motif) ligand 12
+2779543,0.006940789473684211,EMCN,endomucin
+3369442,0.006923076923076923,PAMR1,peptidase domain containing associated with muscle regeneration 1
+3021158,0.006666666666666667,C7ORF58,chromosome 7 open reading frame 58
+3091077,0.006666666666666667,DPYSL2,dihydropyrimidinase-like 2
+2931569,0.006666666666666667,AKAP12,A kinase (PRKA) anchor protein 12
+3078348,0.006666666666666667,EZH2,enhancer of zeste homolog 2 (Drosophila)
+2570616,0.006666666666666667,BUB1,budding uninhibited by benzimidazoles 1 homolog (yeast)
+2615360,0.006666666666666667,TGFBR2,"transforming growth factor, beta receptor II (70/80kDa)"
+2611056,0.006666666666666667,PPARG,peroxisome proliferator-activated receptor gamma
+2735759,0.006666666666666667,MMRN1,multimerin 1
+2777070,0.006666666666666667,HSD17B11,hydroxysteroid (17-beta) dehydrogenase 11
+2788926,0.006666666666666667,NR3C2,"nuclear receptor subfamily 3, group C, member 2"
+2340433,0.006666666666666667,LEPR,leptin receptor
+2358993,0.006666666666666667,TUFT1,tuftelin 1
+2453307,0.006666666666666667,CD34,CD34 molecule
+2436401,0.006666666666666667,JTB,jumping translocation breakpoint
+4004853,0.006666666666666667,SRPX,"sushi-repeat-containing protein, X-linked"
+3984536,0.006666666666666667,CSTF2,"cleavage stimulation factor, 3' pre-RNA, subunit 2, 64kDa"
+3510450,0.006666666666666667,LHFP,lipoma HMGIC fusion partner
+3336238,0.006666666666666667,DPP3,dipeptidyl-peptidase 3
+3209726,0.006666666666666667,ALDH1A1,"aldehyde dehydrogenase 1 family, member A1"
+3381150,0.006666666666666667,PDE2A,"phosphodiesterase 2A, cGMP-stimulated"
+3519309,0.006666666666666667,SPRY2,sprouty homolog 2 (Drosophila)
+3504193,0.006666666666666667,GJB2,"gap junction protein, beta 2, 26kDa"
+2914693,0.0033333333333333335,SH3BGRL2,SH3 domain binding glutamic acid-rich protein like 2
+2882834,0.0033333333333333335,C5ORF4,chromosome 5 open reading frame 4
+2360700,0.0033333333333333335,RAG1AP1,recombination activating gene 1 activating protein 1
+2372211,0.0033333333333333335,PLA2G4A,"phospholipase A2, group IVA (cytosolic, calcium-dependent)"
+2783788,0.0033333333333333335,PRDM5,PR domain containing 5
+2854092,0.0033333333333333335,LIFR,leukemia inhibitory factor receptor alpha
+4027639,0.0033333333333333335,F8,"coagulation factor VIII, procoagulant component"
+3880827,0.0033333333333333335,GINS1,GINS complex subunit 1 (Psf1 homolog)
+3484895,0.0033333333333333335,KL,klotho
+3415744,0.0033333333333333335,IGFBP6,insulin-like growth factor binding protein 6
+3655665,0.0033333333333333335,MAZ,MYC-associated zinc finger protein (purine-binding transcription factor)
+3537164,0.0033333333333333335,PELI2,pellino homolog 2 (Drosophila)
+2610972,0.0033333333333333335,SYN2,synapsin II
+2648677,0.0033333333333333335,MME,membrane metallo-endopeptidase
+3509411,0.0033333333333333335,MAB21L1,mab-21-like 1 (C. elegans)
+3896200,0.0033333333333333335,PCNA,proliferating cell nuclear antigen
+3863576,0.0033333333333333335,PAFAH1B3,"platelet-activating factor acetylhydrolase 1b, catalytic subunit 3 (29kDa)"
+3387537,0.0033333333333333335,MAML2,mastermind-like 2 (Drosophila)
+3674840,0.0033333333333333335,POLR3K,"polymerase (RNA) III (DNA directed) polypeptide K, 12.3 kDa"
+3682028,0.0033333333333333335,MYH11,"myosin, heavy chain 11, smooth muscle"
+3727583,0.0033333333333333335,HLF,hepatic leukemia factor
+3564027,0.0033333333333333335,SAV1,salvador homolog 1 (Drosophila)
+3187686,0.0033333333333333335,GSN,gelsolin
+3173508,0.0033333333333333335,PGM5,phosphoglucomutase 5
+3393479,0.0033333333333333335,FXYD6,FXYD domain containing ion transport regulator 6
+3065740,0.0033333333333333335,RELN,reelin
+3150579,0.0033333333333333335,ENPP2,ectonucleotide pyrophosphatase/phosphodiesterase 2
+3360401,0.0033333333333333335,HBB,"hemoglobin, beta"
+3371003,0.0033333333333333335,TP53I11,tumor protein p53 inducible protein 11
+3276337,0.0033333333333333335,ITIH5,inter-alpha (globulin) inhibitor H5
+3102372,0.0033333333333333335,SULF1,sulfatase 1
+3094778,0.0033333333333333335,TACC1,"transforming, acidic coiled-coil containing protein 1"
+3070183,0.0033333333333333335,AASS,aminoadipate-semialdehyde synthase
+3012978,0.0033333333333333335,GNG11,"guanine nucleotide binding protein (G protein), gamma 11"
+3019793,0.0033333333333333335,FOXP2,forkhead box P2
+2777487,0.0033333333333333335,FAM13A,"family with sequence similarity 13, member A"
+2685304,0.0033333333333333335,PROS1,protein S (alpha)
+2742109,0.0033333333333333335,FGF2,fibroblast growth factor 2 (basic)
+2513554,0.0033333333333333335,CSRNP3,cysteine-serine-rich nuclear protein 3
+2451043,0.0033333333333333335,LMOD1,leiomodin 1 (smooth muscle)
+2454532,0.0033333333333333335,INTS7,integrator complex subunit 7
+2498274,0.0033333333333333335,C2ORF40,chromosome 2 open reading frame 40
+2598261,0.0033333333333333335,FN1,fibronectin 1
+2742224,0.0033333333333333335,SPRY1,"sprouty homolog 1, antagonist of FGF signaling (Drosophila)"
+2995589,0.0033333333333333335,AQP1,aquaporin 1 (Colton blood group)
+2953139,0.0033333333333333335,MOCS1,molybdenum cofactor synthesis 1
+3010503,0.0033333333333333335,CD36,CD36 molecule (thrombospondin receptor)
+2905296,0.003076923076923077,PI16,peptidase inhibitor 16
+2602653,0.0,PID1,phosphotyrosine interaction domain containing 1
+2652027,0.0,CLDN11,claudin 11
+2735221,0.0,PKD2,polycystic kidney disease 2 (autosomal dominant)
+2727226,0.0,PDGFRA,"platelet-derived growth factor receptor, alpha polypeptide"
+2779199,0.0,ADH1A,"alcohol dehydrogenase 1A (class I), alpha polypeptide"
+2779231,0.0,ADH1B,"alcohol dehydrogenase 1B (class I), beta polypeptide"
+2542420,0.0,OSR1,odd-skipped related 1 (Drosophila)
+2522247,0.0,AOX1,aldehyde oxidase 1
+2477203,0.0,VIT,vitrin
+2379665,0.0,PROX1,prospero homeobox 1
+2422722,0.0,TGFBR3,"transforming growth factor, beta receptor III"
+2379863,0.0,CENPF,"centromere protein F, 350/400kDa (mitosin)"
+2445982,0.0,ANGPTL1,angiopoietin-like 1
+2451200,0.0,UBE2T,ubiquitin-conjugating enzyme E2T (putative)
+2326410,0.0,CCDC21,coiled-coil domain containing 21
+2340078,0.0,CACHD1,cache domain containing 1
+2362511,0.0,DARC,"Duffy blood group, chemokine receptor"
+2378937,0.0,DTL,denticleless homolog (Drosophila)
+2652801,0.0,NLGN1,neuroligin 1
+2656818,0.0,ADIPOQ,"adiponectin, C1Q and collagen domain containing"
+2665720,0.0,ZNF385D,zinc finger protein 385D
+2678448,0.0,FAM107A,"family with sequence similarity 107, member A"
+2926969,0.0,PDE7B,phosphodiesterase 7B
+2925237,0.0,LAMA2,"laminin, alpha 2"
+2897453,0.0,ID4,"inhibitor of DNA binding 4, dominant negative helix-loop-helix protein"
+2879312,0.0,NR3C1,"nuclear receptor subfamily 3, group C, member 1 (glucocorticoid receptor)"
+2835715,0.0,GPX3,glutathione peroxidase 3 (plasma)
+2774971,0.0,ANTXR2,anthrax toxin receptor 2
+3389077,0.0,PDGFD,platelet derived growth factor D
+3387708,0.0,LOC100131541,hypothetical LOC100131541
+3144346,0.0,RUNX1T1,"runt-related transcription factor 1; translocated to, 1 (cyclin D-related)"
+3145107,0.0,CCNE2,cyclin E2
+3132782,0.0,SFRP1,secreted frizzled-related protein 1
+3142381,0.0,FABP4,"fatty acid binding protein 4, adipocyte"
+3302886,0.0,HPSE2,heparanase 2
+3362826,0.0,LYVE1,lymphatic vessel endothelial hyaluronan receptor 1
+3111561,0.0,PKHD1L1,polycystic kidney and hepatic disease 1 (autosomal recessive)-like 1
+3116839,0.0,WISP1,WNT1 inducible signaling pathway protein 1
+3020273,0.0,CAV2,caveolin 2
+3079313,0.0,CDK5,cyclin-dependent kinase 5
+3041294,0.0,FAM126A,"family with sequence similarity 126, member A"
+3062082,0.0,PDK4,"pyruvate dehydrogenase kinase, isozyme 4"
+2958325,0.0,DST,dystonin
+2997376,0.0,ANLN,"anillin, actin binding protein"
+3002640,0.0,EGFR,epidermal growth factor receptor
+2979871,0.0,SYNE1,"spectrin repeat containing, nuclear envelope 1"
+3094334,0.0,GPR124,G protein-coupled receptor 124
+3088486,0.0,LPL,lipoprotein lipase
+3087438,0.0,EFHA2,"EF-hand domain family, member A2"
+3108526,0.0,MATN2,matrilin 2
+3190939,0.0,PPP2R4,"protein phosphatase 2A activator, regulatory subunit 4"
+3178583,0.0,CKS2,CDC28 protein kinase regulatory subunit 2
+3199511,0.0,FREM1,FRAS1 related extracellular matrix 1
+3258168,0.0,KIF11,kinesin family member 11
+3413950,0.0,SPATS2,"spermatogenesis associated, serine-rich 2"
+3391149,0.0,FDXACB1,ferredoxin-fold anticodon binding domain containing 1
+3687789,0.0,DCTPP1,dCTP pyrophosphatase 1
+3589697,0.0,BUB1B,budding uninhibited by benzimidazoles 1 homolog beta (yeast)
+3590388,0.0,NUSAP1,nucleolar and spindle associated protein 1
+3590014,0.0,CASC5,cancer susceptibility candidate 5
+3639031,0.0,PRC1,protein regulator of cytokinesis 1
+3656527,0.0,PHKG2,"phosphorylase kinase, gamma 2 (testis)"
+3576749,0.0,FBLN5,fibulin 5
+3468345,0.0,IGF1,insulin-like growth factor 1 (somatomedin C)
+3417485,0.0,OBFC2B,oligonucleotide/oligosaccharide-binding fold containing 2B
+3434393,0.0,DYNLL1,"dynein, light chain, LC8-type 1"
+3446297,0.0,RERGL,RERG/RAS-like
+3513549,0.0,RCBTB2,regulator of chromosome condensation (RCC1) and BTB (POZ) domain containing protein 2
+3518766,0.0,EDNRB,endothelin receptor type B
+3546924,0.0,FLRT2,fibronectin leucine rich transmembrane protein 2
+3767531,0.0,CCDC46,coiled-coil domain containing 46
+3753966,0.0,CCL14-CCL15,CCL14-CCL15 read-through transcript
+3881443,0.0,TPX2,"TPX2, microtubule-associated, homolog (Xenopus laevis)"
+3889624,0.0,TSHZ2,teashirt zinc finger homeobox 2
+3770606,0.0,HN1,hematological and neurological expressed 1
+3768703,0.0,ABCA9,"ATP-binding cassette, sub-family A (ABC1), member 9"
+3859946,0.0,HSPB6,"heat shock protein, alpha-crystallin-related, B6"
+3889419,0.0,TSHZ2,teashirt zinc finger homeobox 2
+3916527,0.0,JAM2,junctional adhesion molecule 2
+3985305,0.0,GPRASP2,G protein-coupled receptor associated sorting protein 2
+3985260,0.0,GPRASP1,G protein-coupled receptor associated sorting protein 1
+3931765,0.0,ERG,v-ets erythroblastosis virus E26 oncogene homolog (avian)
+3987228,0.0,PAK3,p21 protein (Cdc42/Rac)-activated kinase 3
+3992408,0.0,FHL1,four and a half LIM domains 1
+4018080,0.0,CHRDL1,chordin-like 1
+4047493,0.0,PCDH18,protocadherin 18

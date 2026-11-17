@@ -1,0 +1,51 @@
+sample_id,title,tissue_raw,patient_id,age_years,cancer_stage,sex,platform_id,label,tissue_type
+GSM2934481,2102-Normal,breast tumor adjacent normal tissue,2102,46,IIIA,female,GPL5175,0,Adjacent normal
+GSM2934482,2102-Tumor,breast cancer tissue,2102,46,IIIA,female,GPL5175,1,Tumor
+GSM2934483,2110-Normal,breast tumor adjacent normal tissue,2110,43,IIIC,female,GPL5175,0,Adjacent normal
+GSM2934484,2110-Tumor,breast cancer tissue,2110,43,IIIC,female,GPL5175,1,Tumor
+GSM2934485,2146-Normal,breast tumor adjacent normal tissue,2146,54,IIA,female,GPL5175,0,Adjacent normal
+GSM2934486,2146-Tumor,breast cancer tissue,2146,54,IIA,female,GPL5175,1,Tumor
+GSM2934487,2181-Normal,breast tumor adjacent normal tissue,2181,53,I,female,GPL5175,0,Adjacent normal
+GSM2934488,2181-Tumor,breast cancer tissue,2181,53,I,female,GPL5175,1,Tumor
+GSM2934489,2190-Normal,breast tumor adjacent normal tissue,2190,44,I,female,GPL5175,0,Adjacent normal
+GSM2934490,2190-Tumor,breast cancer tissue,2190,44,I,female,GPL5175,1,Tumor
+GSM2934491,2280-Normal,breast tumor adjacent normal tissue,2280,44,I,female,GPL5175,0,Adjacent normal
+GSM2934492,2280-Tumor,breast cancer tissue,2280,44,I,female,GPL5175,1,Tumor
+GSM2934493,2297-Normal,breast tumor adjacent normal tissue,2297,54,IIIA,female,GPL5175,0,Adjacent normal
+GSM2934494,2297-Tumor,breast cancer tissue,2297,54,IIIA,female,GPL5175,1,Tumor
+GSM2934495,2353-Normal,breast tumor adjacent normal tissue,2353,44,IIA,female,GPL5175,0,Adjacent normal
+GSM2934496,2353-Tumor,breast cancer tissue,2353,44,IIA,female,GPL5175,1,Tumor
+GSM2934497,2365-Normal,breast tumor adjacent normal tissue,2365,54,IIIA,female,GPL5175,0,Adjacent normal
+GSM2934498,2365-Tumor,breast cancer tissue,2365,54,IIIA,female,GPL5175,1,Tumor
+GSM2934499,2397-Normal,breast tumor adjacent normal tissue,2397,44,IIA,female,GPL5175,0,Adjacent normal
+GSM2934500,2397-Tumor,breast cancer tissue,2397,44,IIA,female,GPL5175,1,Tumor
+GSM2934501,2451-Normal,breast tumor adjacent normal tissue,2451,56,IIB,female,GPL5175,0,Adjacent normal
+GSM2934502,2451-Tumor,breast cancer tissue,2451,56,IIB,female,GPL5175,1,Tumor
+GSM2934503,2454-Normal,breast tumor adjacent normal tissue,2454,33,IIA,female,GPL5175,0,Adjacent normal
+GSM2934504,2454-Tumor,breast cancer tissue,2454,33,IIA,female,GPL5175,1,Tumor
+GSM2934505,2706-Normal,breast tumor adjacent normal tissue,2706,55,IIIA,female,GPL5175,0,Adjacent normal
+GSM2934506,2706-Tumor,breast cancer tissue,2706,55,IIIA,female,GPL5175,1,Tumor
+GSM2934507,2780-Normal,breast tumor adjacent normal tissue,2780,56,IIA,female,GPL5175,0,Adjacent normal
+GSM2934508,2780-Tumor,breast cancer tissue,2780,56,IIA,female,GPL5175,1,Tumor
+GSM2934509,2910-Normal,breast tumor adjacent normal tissue,2910,36,IIA,female,GPL5175,0,Adjacent normal
+GSM2934510,2910-Tumor,breast cancer tissue,2910,36,IIA,female,GPL5175,1,Tumor
+GSM2934511,2917-Normal,breast tumor adjacent normal tissue,2917,47,IIIA,female,GPL5175,0,Adjacent normal
+GSM2934512,2917-Tumor,breast cancer tissue,2917,47,IIIA,female,GPL5175,1,Tumor
+GSM2934513,2943-Normal,breast tumor adjacent normal tissue,2943,47,IIA,female,GPL5175,0,Adjacent normal
+GSM2934514,2943-Tumor,breast cancer tissue,2943,47,IIA,female,GPL5175,1,Tumor
+GSM2934515,2972-Normal,breast tumor adjacent normal tissue,2972,34,I,female,GPL5175,0,Adjacent normal
+GSM2934516,2972-Tumor,breast cancer tissue,2972,34,I,female,GPL5175,1,Tumor
+GSM2934517,2985-Normal,breast tumor adjacent normal tissue,2985,46,I,female,GPL5175,0,Adjacent normal
+GSM2934518,2985-Tumor,breast cancer tissue,2985,46,I,female,GPL5175,1,Tumor
+GSM2934519,3156-Normal,breast tumor adjacent normal tissue,3156,35,IIB,female,GPL5175,0,Adjacent normal
+GSM2934520,3156-Tumor,breast cancer tissue,3156,35,IIB,female,GPL5175,1,Tumor
+GSM2934521,3159-Normal,breast tumor adjacent normal tissue,3159,55,IIIA,female,GPL5175,0,Adjacent normal
+GSM2934522,3159-Tumor,breast cancer tissue,3159,55,IIIA,female,GPL5175,1,Tumor
+GSM2934523,3197-Normal,breast tumor adjacent normal tissue,3197,34,IIA,female,GPL5175,0,Adjacent normal
+GSM2934524,3197-Tumor,breast cancer tissue,3197,34,IIA,female,GPL5175,1,Tumor
+GSM2934525,3232-Normal,breast tumor adjacent normal tissue,3232,47,I,female,GPL5175,0,Adjacent normal
+GSM2934526,3232-Tumor,breast cancer tissue,3232,47,I,female,GPL5175,1,Tumor
+GSM2934527,3297-Normal,breast tumor adjacent normal tissue,3297,56,IIIA,female,GPL5175,0,Adjacent normal
+GSM2934528,3297-Tumor,breast cancer tissue,3297,56,IIIA,female,GPL5175,1,Tumor
+GSM2934529,3355-Normal,breast tumor adjacent normal tissue,3355,46,IIB,female,GPL5175,0,Adjacent normal
+GSM2934530,3355-Tumor,breast cancer tissue,3355,46,IIB,female,GPL5175,1,Tumor

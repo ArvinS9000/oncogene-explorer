@@ -1,0 +1,26 @@
+{
+  "model": "logistic_regression",
+  "display_name": "Logistic regression",
+  "model_version": "0.1.0",
+  "created_utc": "2026-11-17T21:31:20+00:00",
+  "seed": 42,
+  "config_hash": "ea5d2c7ec8d6",
+  "best_params": {
+    "clf__C": 0.01,
+    "select__k": 50
+  },
+  "n_input_features": 17868,
+  "n_features_used": 50,
+  "sklearn_version": "1.6.1",
+  "python_version": "3.11.9",
+  "purpose": "Final model refit on all 50 samples for interpretation and demonstration. Performance estimates come ONLY from nested patient-grouped CV.",
+  "nested_cv_summary": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "specificity": 1.0,
+    "f1": 1.0,
+    "balanced_accuracy": 1.0,
+    "roc_auc": 1.0
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "n_samples": 50,
+  "n_patients": 25,
+  "n_tumor": 25,
+  "n_normal": 25,
+  "n_features": 17868,
+  "missing_values": 0,
+  "expression_min": 1.6,
+  "expression_max": 13.84,
+  "expression_median": 7.25,
+  "age_median": 46.0,
+  "stage_counts": {
+    "IIA": 8,
+    "IIIA": 7,
+    "I": 6,
+    "IIB": 3,
+    "IIIC": 1
+  }
+}
